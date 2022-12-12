@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+.example-1{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media print{
+  .example-1{
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+}
+
+@media screen and (min-width: 650px) {
+ .example-1{
+  background-color: brown;
+  font-size: 30px;
+ } 
+}
+
+@media screen and (max-width: 450px) {
+  .example-1{
+    font-size: 20px;
+  }
+}
+
+.example-2{
+  padding: 20px 20px;
+  background-color: rgb(207, 140, 140);
+}
+
+@media screen and (min-width: 400px) and (max-width:599px) {
+  .example-2{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:799px) {
+  .example-2{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width:999px) {
+  .example-2{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1199px) {
+  .example-2{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1399px) {
+  .example-2{
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.img-1 img{
+  float: left;
+  max-width: 300px;
+}
+
+@media screen  and (min-width:300px) {
+    .img-1 img{
+      max-width: 300px;
+    }
+
+}
+@media screen  and (max-width:500px) {
+  .img-1 img{
+    max-width: 500px;
+  }
+
+}
